@@ -1,0 +1,95 @@
+body{
+    background-color: #201f30;
+    color: #cfcfcf;
+    min-width: 300px;
+    line-height: 1.2;
+    margin: 10px;
+  }
+  #navbar{
+    position: fixed;
+    min-width: 290px;
+    top: 0;    
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: solid 3px;
+    border-color: #ca5;
+  }
+  header{
+    color: #ca5;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.8em;
+  }
+  #navbar ul{
+    height: 88%; 
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    list-style: none;
+    line-height: 2;
+  }
+  ul{
+      display: block;
+      list-style-type: disc;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 5px;
+      margin-inline-end: 0px;
+      padding-inline-start: 40px;
+  }
+  #navbar li{
+    color: #ccc;
+    border-top: 1px solid;
+    list-style: none;
+    position: relative;
+    width: 100%;
+  }
+  a{
+    color:#cfcfcf;
+    text-decoration: none;
+    font-size: 1.2rem
+  }
+  #main-doc{
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 100px;
+  }
+  section{
+    display: block;
+  }
+  h3{
+    color: #ca5;
+    font-size: 1.3rem;
+  }
+  li{
+    text-align: -webkit-match-parent;
+    list-style: none;
+  }
+  #My_Profile li::before, #My_Tech_Career_Journey li::before{
+    content: "\2022"; /*Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #ca5; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: 1em;
+  }
+  code{
+    background-color: #ca5;
+    color: #201f30;
+    display: block;
+    text-align: left;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: #201f30;
+    }
+  }
